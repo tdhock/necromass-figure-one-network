@@ -1,0 +1,569 @@
+{
+ "geoms": {
+ "geom1_segment_network": {
+ "geom": "segment",
+"classed": "geom1_segment_network",
+"aes": {
+ "x": "target_x",
+"y": "target_y",
+"xend": "source_x",
+"yend": "source_y",
+"colour": "sign",
+"showSelectedlegendcolour": "sign",
+"clickSelects": "pair" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"alpha":      0.6,
+"clickSelects": "pair" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"xend": "numeric",
+"y": "numeric",
+"yend": "numeric",
+"showSelectedlegendcolour": "character",
+"clickSelects": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelectedlegendcolour" 
+],
+"subset_order": [
+ "showSelectedlegendcolour" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_point_network": {
+ "geom": "point",
+"classed": "geom2_point_network",
+"aes": {
+ "x": "x",
+"y": "y",
+"fill": "kingdom",
+"tooltip": "taxon",
+"showSelectedlegendfill": "kingdom" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":       21,
+"size":        4 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"tooltip": "character",
+"showSelectedlegendfill": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelectedlegendfill" 
+],
+"subset_order": [
+ "showSelectedlegendfill" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_point_scatter": {
+ "geom": "point",
+"classed": "geom3_point_scatter",
+"aes": {
+ "x": "data.x",
+"y": "data.y",
+"showSelected1": "pair" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": "pair" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_text_scatter": {
+ "geom": "text",
+"classed": "geom4_text_scatter",
+"aes": {
+ "x": "0.5",
+"y": "-0.05",
+"label": "taxon.x",
+"showSelected1": "pair" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "pair" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_text_scatter": {
+ "geom": "text",
+"classed": "geom5_text_scatter",
+"aes": {
+ "x": "-0.05",
+"y": "0.5",
+"label": "taxon.y",
+"showSelected1": "pair" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"angle":       90,
+"showSelected": "pair" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "sign": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "positive", "negative" ],
+"levels": [ "positive", "negative" ],
+"update": [
+ "geom1_segment_network" 
+] 
+},
+"kingdom": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "bacteria", "fungi" ],
+"levels": [ "bacteria", "fungi" ],
+"update": [
+ "geom2_point_network" 
+] 
+},
+"pair": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "Bacillus, Bradyrhizobium",
+"levels": [ "Bacillus, Bradyrhizobium", "Bacillus, Burkholderia", "Bacillus, Cellvibrio", "Bradyrhizobium, Cellvibrio", "Burkholderia, Cellvibrio", "Bacillus, Chitinophaga", "Bradyrhizobium, Chitinophaga", "Burkholderia, Chitinophaga", "Cellvibrio, Chitinophaga", "Bacillus, Flavobacterium", "Bradyrhizobium, Flavobacterium", "Burkholderia, Flavobacterium", "Cellvibrio, Flavobacterium", "Chitinophaga, Flavobacterium", "Bacillus, Gp16", "Bradyrhizobium, Gp16", "Burkholderia, Gp16", "Cellvibrio, Gp16", "Chitinophaga, Gp16", "Flavobacterium, Gp16", "Bacillus, Gp6", "Bradyrhizobium, Gp6", "Burkholderia, Gp6", "Cellvibrio, Gp6", "Chitinophaga, Gp6", "Flavobacterium, Gp6", "Gp16, Gp6", "Bacillus, Kaistia", "Bradyrhizobium, Kaistia", "Burkholderia, Kaistia", "Cellvibrio, Kaistia", "Chitinophaga, Kaistia", "Flavobacterium, Kaistia", "Gp16, Kaistia", "Gp6, Kaistia", "Bacillus, Labrys", "Bradyrhizobium, Labrys", "Cellvibrio, Labrys", "Chitinophaga, Labrys", "Flavobacterium, Labrys", "Gp16, Labrys", "Gp6, Labrys", "Kaistia, Labrys", "Bacillus, Luteibacter", "Bradyrhizobium, Luteibacter", "Burkholderia, Luteibacter", "Chitinophaga, Luteibacter", "Flavobacterium, Luteibacter", "Gp16, Luteibacter", "Gp6, Luteibacter", "Kaistia, Luteibacter", "Labrys, Luteibacter", "Bradyrhizobium, Mucilaginibacter", "Cellvibrio, Mucilaginibacter", "Chitinophaga, Mucilaginibacter", "Flavobacterium, Mucilaginibacter", "Gp16, Mucilaginibacter", "Gp6, Mucilaginibacter", "Kaistia, Mucilaginibacter", "Labrys, Mucilaginibacter", "Luteibacter, Mucilaginibacter", "Bacillus, Mycobacterium", "Bradyrhizobium, Mycobacterium", "Burkholderia, Mycobacterium", "Cellvibrio, Mycobacterium", "Flavobacterium, Mycobacterium", "Gp16, Mycobacterium", "Gp6, Mycobacterium", "Kaistia, Mycobacterium", "Labrys, Mycobacterium", "Luteibacter, Mycobacterium", "Bacillus, Paenibacillus", "Bradyrhizobium, Paenibacillus", "Burkholderia, Paenibacillus", "Cellvibrio, Paenibacillus", "Chitinophaga, Paenibacillus", "Flavobacterium, Paenibacillus", "Gp16, Paenibacillus", "Gp6, Paenibacillus", "Kaistia, Paenibacillus", "Luteibacter, Paenibacillus", "Mucilaginibacter, Paenibacillus", "Mycobacterium, Paenibacillus", "Bradyrhizobium, Pedobacter", "Burkholderia, Pedobacter", "Cellvibrio, Pedobacter", "Chitinophaga, Pedobacter", "Flavobacterium, Pedobacter", "Gp16, Pedobacter", "Gp6, Pedobacter", "Kaistia, Pedobacter", "Labrys, Pedobacter", "Luteibacter, Pedobacter", "Mucilaginibacter, Pedobacter", "Mycobacterium, Pedobacter", "Paenibacillus, Pedobacter", "Bacillus, Pseudomonas", "Bradyrhizobium, Pseudomonas", "Burkholderia, Pseudomonas", "Cellvibrio, Pseudomonas", "Chitinophaga, Pseudomonas", "Flavobacterium, Pseudomonas", "Gp16, Pseudomonas", "Gp6, Pseudomonas", "Kaistia, Pseudomonas", "Labrys, Pseudomonas", "Luteibacter, Pseudomonas", "Mucilaginibacter, Pseudomonas", "Mycobacterium, Pseudomonas", "Paenibacillus, Pseudomonas", "Pedobacter, Pseudomonas", "Bacillus, Rhizobium", "Bradyrhizobium, Rhizobium", "Burkholderia, Rhizobium", "Cellvibrio, Rhizobium", "Chitinophaga, Rhizobium", "Flavobacterium, Rhizobium", "Gp16, Rhizobium", "Gp6, Rhizobium", "Kaistia, Rhizobium", "Labrys, Rhizobium", "Luteibacter, Rhizobium", "Mucilaginibacter, Rhizobium", "Paenibacillus, Rhizobium", "Pedobacter, Rhizobium", "Pseudomonas, Rhizobium", "Bacillus, Spartobacteria_genera_incertae_sedis", "Bradyrhizobium, Spartobacteria_genera_incertae_sedis", "Burkholderia, Spartobacteria_genera_incertae_sedis", "Cellvibrio, Spartobacteria_genera_incertae_sedis", "Chitinophaga, Spartobacteria_genera_incertae_sedis", "Flavobacterium, Spartobacteria_genera_incertae_sedis", "Gp16, Spartobacteria_genera_incertae_sedis", "Gp6, Spartobacteria_genera_incertae_sedis", "Kaistia, Spartobacteria_genera_incertae_sedis", "Labrys, Spartobacteria_genera_incertae_sedis", "Luteibacter, Spartobacteria_genera_incertae_sedis", "Mucilaginibacter, Spartobacteria_genera_incertae_sedis", "Mycobacterium, Spartobacteria_genera_incertae_sedis", "Paenibacillus, Spartobacteria_genera_incertae_sedis", "Pedobacter, Spartobacteria_genera_incertae_sedis", "Pseudomonas, Spartobacteria_genera_incertae_sedis", "Rhizobium, Spartobacteria_genera_incertae_sedis", "Bacillus, Sphingomonas", "Bradyrhizobium, Sphingomonas", "Burkholderia, Sphingomonas", "Cellvibrio, Sphingomonas", "Chitinophaga, Sphingomonas", "Flavobacterium, Sphingomonas", "Gp16, Sphingomonas", "Gp6, Sphingomonas", "Kaistia, Sphingomonas", "Luteibacter, Sphingomonas", "Mucilaginibacter, Sphingomonas", "Mycobacterium, Sphingomonas", "Paenibacillus, Sphingomonas", "Pseudomonas, Sphingomonas", "Rhizobium, Sphingomonas", "Spartobacteria_genera_incertae_sedis, Sphingomonas", "Bacillus, Absidia", "Flavobacterium, Absidia", "Kaistia, Absidia", "Mucilaginibacter, Absidia", "Mycobacterium, Absidia", "Paenibacillus, Absidia", "Bradyrhizobium, Amphinema", "Cellvibrio, Amphinema", "Chitinophaga, Amphinema", "Gp16, Amphinema", "Gp6, Amphinema", "Kaistia, Amphinema", "Labrys, Amphinema", "Luteibacter, Amphinema", "Mucilaginibacter, Amphinema", "Paenibacillus, Amphinema", "Pedobacter, Amphinema", "Pseudomonas, Amphinema", "Rhizobium, Amphinema", "Spartobacteria_genera_incertae_sedis, Amphinema", "Sphingomonas, Amphinema", "Absidia, Amphinema", "Bradyrhizobium, Cenococcum", "Cellvibrio, Cenococcum", "Chitinophaga, Cenococcum", "Flavobacterium, Cenococcum", "Gp16, Cenococcum", "Gp6, Cenococcum", "Kaistia, Cenococcum", "Labrys, Cenococcum", "Luteibacter, Cenococcum", "Mucilaginibacter, Cenococcum", "Mycobacterium, Cenococcum", "Paenibacillus, Cenococcum", "Pedobacter, Cenococcum", "Pseudomonas, Cenococcum", "Rhizobium, Cenococcum", "Spartobacteria_genera_incertae_sedis, Cenococcum", "Sphingomonas, Cenococcum", "Absidia, Cenococcum", "Amphinema, Cenococcum", "Bacillus, Chaetomium", "Bradyrhizobium, Chaetomium", "Burkholderia, Chaetomium", "Cellvibrio, Chaetomium", "Chitinophaga, Chaetomium", "Flavobacterium, Chaetomium", "Gp16, Chaetomium", "Gp6, Chaetomium", "Kaistia, Chaetomium", "Labrys, Chaetomium", "Luteibacter, Chaetomium", "Mucilaginibacter, Chaetomium", "Mycobacterium, Chaetomium", "Paenibacillus, Chaetomium", "Pedobacter, Chaetomium", "Pseudomonas, Chaetomium", "Rhizobium, Chaetomium", "Spartobacteria_genera_incertae_sedis, Chaetomium", "Sphingomonas, Chaetomium", "Absidia, Chaetomium", "Amphinema, Chaetomium", "Cenococcum, Chaetomium", "Bradyrhizobium, Cryptococcus", "Burkholderia, Cryptococcus", "Cellvibrio, Cryptococcus", "Chitinophaga, Cryptococcus", "Flavobacterium, Cryptococcus", "Gp16, Cryptococcus", "Gp6, Cryptococcus", "Kaistia, Cryptococcus", "Labrys, Cryptococcus", "Luteibacter, Cryptococcus", "Mucilaginibacter, Cryptococcus", "Mycobacterium, Cryptococcus", "Paenibacillus, Cryptococcus", "Pedobacter, Cryptococcus", "Pseudomonas, Cryptococcus", "Rhizobium, Cryptococcus", "Spartobacteria_genera_incertae_sedis, Cryptococcus", "Sphingomonas, Cryptococcus", "Amphinema, Cryptococcus", "Cenococcum, Cryptococcus", "Chaetomium, Cryptococcus", "Bacillus, Inocybe", "Bradyrhizobium, Inocybe", "Burkholderia, Inocybe", "Cellvibrio, Inocybe", "Chitinophaga, Inocybe", "Flavobacterium, Inocybe", "Gp16, Inocybe", "Gp6, Inocybe", "Kaistia, Inocybe", "Labrys, Inocybe", "Luteibacter, Inocybe", "Mucilaginibacter, Inocybe", "Mycobacterium, Inocybe", "Paenibacillus, Inocybe", "Pedobacter, Inocybe", "Pseudomonas, Inocybe", "Rhizobium, Inocybe", "Spartobacteria_genera_incertae_sedis, Inocybe", "Sphingomonas, Inocybe", "Amphinema, Inocybe", "Cenococcum, Inocybe", "Chaetomium, Inocybe", "Cryptococcus, Inocybe", "Bacillus, Metarhizium", "Bradyrhizobium, Metarhizium", "Chitinophaga, Metarhizium", "Gp16, Metarhizium", "Gp6, Metarhizium", "Luteibacter, Metarhizium", "Mucilaginibacter, Metarhizium", "Paenibacillus, Metarhizium", "Pedobacter, Metarhizium", "Pseudomonas, Metarhizium", "Rhizobium, Metarhizium", "Spartobacteria_genera_incertae_sedis, Metarhizium", "Sphingomonas, Metarhizium", "Absidia, Metarhizium", "Amphinema, Metarhizium", "Cenococcum, Metarhizium", "Chaetomium, Metarhizium", "Cryptococcus, Metarhizium", "Inocybe, Metarhizium", "Bacillus, Mortierella", "Bradyrhizobium, Mortierella", "Cellvibrio, Mortierella", "Chitinophaga, Mortierella", "Flavobacterium, Mortierella", "Gp16, Mortierella", "Gp6, Mortierella", "Kaistia, Mortierella", "Labrys, Mortierella", "Mycobacterium, Mortierella", "Paenibacillus, Mortierella", "Pedobacter, Mortierella", "Pseudomonas, Mortierella", "Rhizobium, Mortierella", "Spartobacteria_genera_incertae_sedis, Mortierella", "Absidia, Mortierella", "Amphinema, Mortierella", "Cenococcum, Mortierella", "Chaetomium, Mortierella", "Inocybe, Mortierella", "Metarhizium, Mortierella", "Bacillus, Mucor", "Bradyrhizobium, Mucor", "Burkholderia, Mucor", "Cellvibrio, Mucor", "Chitinophaga, Mucor", "Flavobacterium, Mucor", "Gp16, Mucor", "Gp6, Mucor", "Kaistia, Mucor", "Labrys, Mucor", "Luteibacter, Mucor", "Mucilaginibacter, Mucor", "Mycobacterium, Mucor", "Paenibacillus, Mucor", "Pedobacter, Mucor", "Pseudomonas, Mucor", "Rhizobium, Mucor", "Sphingomonas, Mucor", "Absidia, Mucor", "Amphinema, Mucor", "Cenococcum, Mucor", "Chaetomium, Mucor", "Cryptococcus, Mucor", "Mortierella, Mucor", "Bradyrhizobium, Ovicillium", "Burkholderia, Ovicillium", "Cellvibrio, Ovicillium", "Chitinophaga, Ovicillium", "Flavobacterium, Ovicillium", "Gp16, Ovicillium", "Gp6, Ovicillium", "Kaistia, Ovicillium", "Labrys, Ovicillium", "Luteibacter, Ovicillium", "Mucilaginibacter, Ovicillium", "Mycobacterium, Ovicillium", "Paenibacillus, Ovicillium", "Pedobacter, Ovicillium", "Pseudomonas, Ovicillium", "Rhizobium, Ovicillium", "Spartobacteria_genera_incertae_sedis, Ovicillium", "Sphingomonas, Ovicillium", "Amphinema, Ovicillium", "Cenococcum, Ovicillium", "Chaetomium, Ovicillium", "Cryptococcus, Ovicillium", "Inocybe, Ovicillium", "Metarhizium, Ovicillium", "Mortierella, Ovicillium", "Mucor, Ovicillium", "Bacillus, Penicillium", "Bradyrhizobium, Penicillium", "Burkholderia, Penicillium", "Cellvibrio, Penicillium", "Chitinophaga, Penicillium", "Flavobacterium, Penicillium", "Gp16, Penicillium", "Gp6, Penicillium", "Kaistia, Penicillium", "Labrys, Penicillium", "Luteibacter, Penicillium", "Mucilaginibacter, Penicillium", "Mycobacterium, Penicillium", "Paenibacillus, Penicillium", "Pedobacter, Penicillium", "Pseudomonas, Penicillium", "Rhizobium, Penicillium", "Spartobacteria_genera_incertae_sedis, Penicillium", "Sphingomonas, Penicillium", "Amphinema, Penicillium", "Cenococcum, Penicillium", "Chaetomium, Penicillium", "Cryptococcus, Penicillium", "Inocybe, Penicillium", "Metarhizium, Penicillium", "Mortierella, Penicillium", "Mucor, Penicillium", "Ovicillium, Penicillium", "Bacillus, Phialocephala", "Bradyrhizobium, Phialocephala", "Burkholderia, Phialocephala", "Cellvibrio, Phialocephala", "Chitinophaga, Phialocephala", "Flavobacterium, Phialocephala", "Gp16, Phialocephala", "Gp6, Phialocephala", "Kaistia, Phialocephala", "Labrys, Phialocephala", "Luteibacter, Phialocephala", "Mycobacterium, Phialocephala", "Paenibacillus, Phialocephala", "Pedobacter, Phialocephala", "Pseudomonas, Phialocephala", "Rhizobium, Phialocephala", "Sphingomonas, Phialocephala", "Cenococcum, Phialocephala", "Chaetomium, Phialocephala", "Inocybe, Phialocephala", "Metarhizium, Phialocephala", "Mortierella, Phialocephala", "Ovicillium, Phialocephala", "Penicillium, Phialocephala", "Bacillus, Russula", "Bradyrhizobium, Russula", "Burkholderia, Russula", "Cellvibrio, Russula", "Chitinophaga, Russula", "Flavobacterium, Russula", "Gp16, Russula", "Gp6, Russula", "Kaistia, Russula", "Labrys, Russula", "Luteibacter, Russula", "Mucilaginibacter, Russula", "Paenibacillus, Russula", "Pedobacter, Russula", "Pseudomonas, Russula", "Rhizobium, Russula", "Spartobacteria_genera_incertae_sedis, Russula", "Sphingomonas, Russula", "Absidia, Russula", "Amphinema, Russula", "Cenococcum, Russula", "Chaetomium, Russula", "Cryptococcus, Russula", "Inocybe, Russula", "Metarhizium, Russula", "Mortierella, Russula", "Ovicillium, Russula", "Penicillium, Russula", "Phialocephala, Russula", "Bradyrhizobium, Tomentella", "Burkholderia, Tomentella", "Gp16, Tomentella", "Gp6, Tomentella", "Labrys, Tomentella", "Luteibacter, Tomentella", "Mucilaginibacter, Tomentella", "Pedobacter, Tomentella", "Pseudomonas, Tomentella", "Rhizobium, Tomentella", "Spartobacteria_genera_incertae_sedis, Tomentella", "Sphingomonas, Tomentella", "Amphinema, Tomentella", "Cenococcum, Tomentella", "Chaetomium, Tomentella", "Cryptococcus, Tomentella", "Inocybe, Tomentella", "Metarhizium, Tomentella", "Mortierella, Tomentella", "Penicillium, Tomentella", "Phialocephala, Tomentella", "Russula, Tomentella", "Bacillus, Trichoderma", "Bradyrhizobium, Trichoderma", "Burkholderia, Trichoderma", "Cellvibrio, Trichoderma", "Chitinophaga, Trichoderma", "Gp16, Trichoderma", "Gp6, Trichoderma", "Kaistia, Trichoderma", "Labrys, Trichoderma", "Luteibacter, Trichoderma", "Mucilaginibacter, Trichoderma", "Pedobacter, Trichoderma", "Pseudomonas, Trichoderma", "Rhizobium, Trichoderma", "Spartobacteria_genera_incertae_sedis, Trichoderma", "Sphingomonas, Trichoderma", "Absidia, Trichoderma", "Amphinema, Trichoderma", "Cenococcum, Trichoderma", "Chaetomium, Trichoderma", "Cryptococcus, Trichoderma", "Inocybe, Trichoderma", "Metarhizium, Trichoderma", "Mucor, Trichoderma", "Ovicillium, Trichoderma", "Penicillium, Trichoderma", "Russula, Trichoderma", "Tomentella, Trichoderma", "Bacillus, Umbelopsis", "Bradyrhizobium, Umbelopsis", "Burkholderia, Umbelopsis", "Cellvibrio, Umbelopsis", "Chitinophaga, Umbelopsis", "Flavobacterium, Umbelopsis", "Gp16, Umbelopsis", "Gp6, Umbelopsis", "Kaistia, Umbelopsis", "Labrys, Umbelopsis", "Luteibacter, Umbelopsis", "Mucilaginibacter, Umbelopsis", "Mycobacterium, Umbelopsis", "Paenibacillus, Umbelopsis", "Pedobacter, Umbelopsis", "Pseudomonas, Umbelopsis", "Rhizobium, Umbelopsis", "Spartobacteria_genera_incertae_sedis, Umbelopsis", "Sphingomonas, Umbelopsis", "Absidia, Umbelopsis", "Amphinema, Umbelopsis", "Cenococcum, Umbelopsis", "Chaetomium, Umbelopsis", "Cryptococcus, Umbelopsis", "Inocybe, Umbelopsis", "Metarhizium, Umbelopsis", "Ovicillium, Umbelopsis", "Penicillium, Umbelopsis", "Phialocephala, Umbelopsis", "Russula, Umbelopsis", "Tomentella, Umbelopsis", "Trichoderma, Umbelopsis", "Bradyrhizobium, Wilcoxina", "Cellvibrio, Wilcoxina", "Flavobacterium, Wilcoxina", "Gp16, Wilcoxina", "Gp6, Wilcoxina", "Kaistia, Wilcoxina", "Mycobacterium, Wilcoxina", "Pseudomonas, Wilcoxina", "Rhizobium, Wilcoxina", "Absidia, Wilcoxina", "Cenococcum, Wilcoxina", "Inocybe, Wilcoxina", "Metarhizium, Wilcoxina", "Mortierella, Wilcoxina", "Mucor, Wilcoxina", "Penicillium, Wilcoxina", "Phialocephala, Wilcoxina", "Tomentella, Wilcoxina", "Bacillus, Mucilaginibacter", "Bacillus, Pedobacter", "Bacillus, Amphinema", "Bacillus, Cenococcum", "Bacillus, Cryptococcus", "Bacillus, Ovicillium", "Bacillus, Tomentella", "Bacillus, Wilcoxina", "Bradyrhizobium, Burkholderia", "Bradyrhizobium, Absidia", "Burkholderia, Labrys", "Burkholderia, Mucilaginibacter", "Burkholderia, Absidia", "Burkholderia, Amphinema", "Burkholderia, Cenococcum", "Burkholderia, Metarhizium", "Burkholderia, Mortierella", "Burkholderia, Wilcoxina", "Cellvibrio, Luteibacter", "Cellvibrio, Absidia", "Cellvibrio, Metarhizium", "Cellvibrio, Tomentella", "Chitinophaga, Mycobacterium", "Chitinophaga, Absidia", "Chitinophaga, Tomentella", "Chitinophaga, Wilcoxina", "Flavobacterium, Amphinema", "Flavobacterium, Metarhizium", "Flavobacterium, Tomentella", "Flavobacterium, Trichoderma", "Gp16, Absidia", "Gp6, Absidia", "Kaistia, Metarhizium", "Kaistia, Tomentella", "Labrys, Paenibacillus", "Labrys, Sphingomonas", "Labrys, Absidia", "Labrys, Metarhizium", "Labrys, Wilcoxina", "Luteibacter, Absidia", "Luteibacter, Mortierella", "Luteibacter, Wilcoxina", "Mucilaginibacter, Mycobacterium", "Mucilaginibacter, Mortierella", "Mucilaginibacter, Phialocephala", "Mucilaginibacter, Wilcoxina", "Mycobacterium, Rhizobium", "Mycobacterium, Amphinema", "Mycobacterium, Metarhizium", "Mycobacterium, Russula", "Mycobacterium, Tomentella", "Mycobacterium, Trichoderma", "Paenibacillus, Tomentella", "Paenibacillus, Trichoderma", "Paenibacillus, Wilcoxina", "Pedobacter, Sphingomonas", "Pedobacter, Absidia", "Pedobacter, Wilcoxina", "Pseudomonas, Absidia", "Rhizobium, Absidia", "Spartobacteria_genera_incertae_sedis, Absidia", "Spartobacteria_genera_incertae_sedis, Mucor", "Spartobacteria_genera_incertae_sedis, Phialocephala", "Spartobacteria_genera_incertae_sedis, Wilcoxina", "Sphingomonas, Absidia", "Sphingomonas, Mortierella", "Sphingomonas, Wilcoxina", "Absidia, Cryptococcus", "Absidia, Inocybe", "Absidia, Ovicillium", "Absidia, Penicillium", "Absidia, Phialocephala", "Absidia, Tomentella", "Amphinema, Phialocephala", "Amphinema, Wilcoxina", "Chaetomium, Wilcoxina", "Cryptococcus, Mortierella", "Cryptococcus, Phialocephala", "Cryptococcus, Wilcoxina", "Inocybe, Mucor", "Metarhizium, Mucor", "Mortierella, Trichoderma", "Mortierella, Umbelopsis", "Mucor, Phialocephala", "Mucor, Russula", "Mucor, Tomentella", "Mucor, Umbelopsis", "Ovicillium, Tomentella", "Ovicillium, Wilcoxina", "Phialocephala, Trichoderma", "Russula, Wilcoxina", "Trichoderma, Wilcoxina", "Umbelopsis, Wilcoxina" ],
+"update": [
+ "geom1_segment_network",
+"geom3_point_scatter",
+"geom4_text_scatter",
+"geom5_text_scatter" 
+] 
+} 
+},
+"plots": {
+ "network": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "sign": {
+ "guide": "legend",
+"geoms": "path",
+"title": "sign",
+"class": "sign",
+"selector": "sign",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#F8766D",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":      0.6,
+"label": "negative" 
+},
+{
+ "pathcolour": "#00BFC4",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":      0.6,
+"label": "positive" 
+} 
+] 
+},
+"kingdom": {
+ "guide": "legend",
+"geoms": "point",
+"title": "kingdom",
+"class": "kingdom",
+"selector": "kingdom",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointfill": "#FFFFFF",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "bacteria" 
+},
+{
+ "pointfill": "#000000",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "fungi" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ true ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": [],
+"panel_border": [],
+"grid_major": {
+ "loc": {
+ "x": [
+ [
+       -1,
+    -0.5,
+       0,
+     0.5,
+       1 
+] 
+],
+"y": [
+ [
+       -1,
+    -0.5,
+       0,
+     0.5,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "loc": {
+ "x": [
+ [
+       -1,
+   -0.75,
+    -0.5,
+   -0.25,
+       0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+],
+"y": [
+ [
+       -1,
+   -0.75,
+    -0.5,
+   -0.25,
+       0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -1,
+    -0.5,
+       0,
+     0.5,
+       1 
+],
+"xrange": [     -1.1,      1.1 ],
+"xline": false,
+"xticks": false,
+"y": [
+       -1,
+    -0.5,
+       0,
+     0.5,
+       1 
+],
+"yrange": [     -1.1,      1.1 ],
+"yline": false,
+"yticks": false 
+},
+"xtitle": "",
+"strip_text_xsize": "11pt",
+"xsize": "pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "11pt",
+"ysize": "pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [],
+"ylabs": [],
+"title": "Click edge to select pair",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom1_segment_network",
+"geom2_point_network" 
+] 
+},
+"scatter": {
+ "panel_margin_lines":     0.25,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+],
+"y": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+],
+"y": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"xlab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"xrange": [  -0.1025,   1.0525 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [  -0.1025,   1.0525 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "data.x",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "data.y",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"ylabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"title": "Normalized abundance for selected pair",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom3_point_scatter",
+"geom4_text_scatter",
+"geom5_text_scatter" 
+] 
+} 
+},
+"title": "bacteria_fungi_conservative visualization",
+"source": "https://github.com/tdhock/necromass/blob/main/figure-one-network.R" 
+}
